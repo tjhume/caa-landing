@@ -210,6 +210,12 @@ var reCAPTCHAv2_init=function(){document.reCAPTCHAv2(),window.jQuery&&window.jQu
 		float: left;
 		text-align: center;
 	}
+	/* Slightly decrease the h2 font size for Safari without overriding max-width media queries */
+	@media (min-width: 681px){
+		#landing-top h2{
+			font-size: 31px;
+		}
+	}
 
 	/* Landing quote section */
 	.landing-quote{
